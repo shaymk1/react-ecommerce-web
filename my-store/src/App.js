@@ -1,9 +1,11 @@
-import React from 'react';
-import './categories.styles.scss';
-import CategoryItem from './components/category-item/category-item.components.jsx';
+
+
+import Directory from './components/directory/directory.component';
+
+// import './categories.styles.scss';
 
 const App = () => {
-	const categories = [
+  const categories = [
 		//object-1
 		{
 			id: 1,
@@ -31,57 +33,11 @@ const App = () => {
 			imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
 		},
 	];
-	return (
-		<React.Fragment>
-			<div className="categories-container">
-				{categories.map(({ category }) => {
-					return <CategoryItem key={category.id} category={category} />;
-				})}
-			</div>
-		</React.Fragment>
-	);
+  <div>
+		return (
+		<Directory categories = {categories} />
+		);
+	</div>;
 };
 
 export default App;
-
-/*container-6
-				<div className="category-container">
-					<img src="" alt="" />
-					<div className="category-body-container">
-						<h2>T-shirts</h2>
-						<p>Shop Now</p>
-					</div>
-				</div>
-
-        	/*container-2*/
-// <div className="category-container">
-// 	<img src="" alt="" />
-// 	<div className="category-body-container">
-// 		<h2>Jackets</h2>
-// 		<p>Shop Now</p>
-// 	</div>
-// </div>
-/*container-3*/
-// <div className="category-container">
-// 	<img src="" alt="" />
-// 	<div className="category-body-container">
-// 		<h2>Sneakers</h2>
-// 		<p>Shop Now</p>
-// 	</div>
-// </div>
-/*container-4*/
-// <div className="category-container">
-// 	<img src="" alt="" />
-// 	<div className="category-body-container">
-// 		<h2>Women</h2>
-// 		<p>Shop Now</p>
-// 	</div>
-// </div>
-/*container-5*/
-// <div className="category-container">
-// 	<img src="" alt="" />
-// 	<div className="category-body-container">
-// 		<h2>Men</h2>
-// 		<p>Shop Now</p>
-// 	</div>
-// </div>
