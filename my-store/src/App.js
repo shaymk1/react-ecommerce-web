@@ -3,13 +3,9 @@ import Authentication from './components/routes/authentication/Authentication.js
 import Home from './components/routes/home/home.component.jsx';
 import Navigation from './components/routes/navigation/navigation.component.jsx';
 
-const Shop = () => {
-	return (
-		<div>
-			<h1>Shop Here</h1>
-		</div>
-	);
-};
+import Shop  from '../src/components/routes/shop/Shop.jsx'
+
+
 const App = () => {
 	return (
 		<Routes>
