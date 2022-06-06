@@ -2,7 +2,7 @@ import { ReactComponent as CrwnLogo } from 'assets/crown.svg';
 import { UserContext } from 'contexts/user.context';
 import { CartContext } from 'contexts/Cart';
 import CartIcon from 'components/cart-icon/CartIcon';
-import CardDropdown from 'components/card dropdown/CardDropdown';
+import CardDropdown from 'components/card dropdown/CartDropdown';
 import { Fragment, useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { signOutUser } from 'utils/firebase/firebase.utils';
