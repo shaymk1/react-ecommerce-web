@@ -1,8 +1,8 @@
 import './directory-item.scss';
 
 const DirectoryItem = ({ category }) => {
-  const { imageUrl, title } = category;
-  return (
+	const { imageUrl, title } = category;
+	return (
 		<div className="directory-item-container">
 			<div
 				className="background-image"
